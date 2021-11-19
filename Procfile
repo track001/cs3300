@@ -1,1 +1,1 @@
-heroku authorizations:create
+release: rails db:migrate
