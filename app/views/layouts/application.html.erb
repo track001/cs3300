@@ -9,22 +9,22 @@
   </head>
 
   <body>
-  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-warning">
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-info">
     <a class="navbar-brand" href="/">Tiana Schwarz</a>
     <div class="navbar-nav ml-auto">
     <% if user_signed_in? %>
-    <%= button_to "New Project", new_project_path, method: :get, :class => "btn btn-outline-primary" , :form_class => "form-inline"%>
+    <%= button_to "New Project", new_project_path, method: :get, :class => "btn btn-outline-dark" , :form_class => "form-inline"%>
     <div style="padding-left: 10px;">
-    <%= button_to "Edit Profile", edit_user_registration_path, method: :get, :class => "btn btn-outline-primary",  :form_class => "form-inline"%>
+    <%= button_to "Edit Profile", edit_user_registration_path, method: :get, :class => "btn btn-outline-dark",  :form_class => "form-inline"%>
     </div>
     <div style="padding-left: 10px;">
-    <%= button_to "Sign Out", destroy_user_session_path, method: :delete, :class => "btn btn-outline-success",  :form_class => "form-inline"%>
+    <%= button_to "Sign Out", destroy_user_session_path, method: :delete, :class => "btn btn-outline-dark",  :form_class => "form-inline"%>
     </div>
     <% else %>
-    <%= button_to "Sign In", new_user_session_path, method: :get, :class => "btn btn-outline-primary", :form_class => "form-inline" %>
+    <%= button_to "Sign In", new_user_session_path, method: :get, :class => "btn btn-outline-dark", :form_class => "form-inline" %>
     
     <div style="padding-left: 10px;">
-    <%= button_to "Sign Up", new_user_registration_path, method: :get, :class => "btn btn-outline-success", :form_class => "form-inline" %>
+    <%= button_to "Sign Up", new_user_registration_path, method: :get, :class => "btn btn-outline-dark", :form_class => "form-inline" %>
     </div>
     <% end %>
     </div>
@@ -37,7 +37,12 @@
   <hr>
   </div>
     <footer class="container text-center">
-    <p>TS | email@uccs.edu</p>
+    <p>Tiana Schwarz with University of Colorado Colorado Springs  
+      <li class="nav-item active">
+        <a class="nav-link" href="mailto:tschwarz@uccs.edu/">tschwarz@uccs.edu <span class="sr-only">(current)</span></a>
+      </li>
+    </p>
+
   </footer>
   </body>
 </html>
