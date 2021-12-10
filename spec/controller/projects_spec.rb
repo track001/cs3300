@@ -70,4 +70,46 @@ end
     end
   end
 
+  context "PATCH #projects/2" do
+  login_user
+  let!(:project) { Project.create(title: "Title i.e.", description: "Example") }
+  it "returns a failure response" do
+    patch :update, :params => { :id => project, :project => { :title => "", :description => "Test" }} #project: project, body: "new body"}
+    expect(Project.first.description).to eq "Example"
+  end
+end
+
+  context "DELETE #projects/2" do
+    login_user
+    let!(:project) { Project.create(title: "Title i.e.", description: "Descriptor i.e.") }
+    it "Project deleted." do
+      expect(Project.count).to eq(1)
+      delete :destroy, :params => { :id => project }
+      expect(Project.count).to eq(0)
+    end
+    it "Project deleted." do
+    end
+  end
+
+  context "PATCH #projects/3" do
+  login_user
+  let!(:project) { Project.create(title: "Title i.e.", description: "Example") }
+  it "returns a failure response" do
+    patch :update, :params => { :id => project, :project => { :title => "", :description => "Test" }} #project: project, body: "new body"}
+    expect(Project.first.description).to eq "Example"
+  end
+end
+
+  context "DELETE #projects/3" do
+    login_user
+    let!(:project) { Project.create(title: "Title i.e.", description: "Descriptor i.e.") }
+    it "Project deleted." do
+      expect(Project.count).to eq(1)
+      delete :destroy, :params => { :id => project }
+      expect(Project.count).to eq(0)
+    end
+    it "Project deleted." do
+    end
+  end
+
 end
