@@ -1,7 +1,8 @@
 Individual Software Project
-Heroku URL: https://tschwarz.herokuapp.com/
-GitHub repo URL: https://github.com/track001/cs3300
-Circle CI URL: https://app.circleci.com/pipelines/github/track001/cs3300
+
+1. Heroku URL: https://tschwarz.herokuapp.com/
+2. GitHub repo URL: https://github.com/track001/cs3300
+3. Circle CI URL: https://app.circleci.com/pipelines/github/track001/cs3300
 
 Comment: Code coverage > 80%. Kanban board fully updated.
 
