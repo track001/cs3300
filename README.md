@@ -1,4 +1,4 @@
-Individual Software Project
+Individual Software Project: 80& code coverage achieved, primarily used Ruby. 
 
 1. Heroku URL: https://tschwarz.herokuapp.com/
 2. GitHub repo URL: https://github.com/track001/cs3300
@@ -19,12 +19,12 @@ Customer Requirements
 10. The portfolio shall be accessible for anywhere on the internet.
 
 Technical Requirements
-● The app’s source code must live in GitHub.
-● The app’s project management must be done using GitHub.
-● The app must be developed using Ruby on Rails.
-● The app must utilize TravisCI for continuous integration and delivery.
-● The app must utilize Heroku for hosting.
-● The app must have at least 3 projects for testing and grading in production.
-● The app must have 80% code coverage as measured by Simplecov.
-○ 10 points extra credit if the CI pipeline runs Simplecov .
-● The app must utilize Bootstrap for the front-end framework.
+1. The app’s source code must live in GitHub.
+2. The app’s project management must be done using GitHub.
+3. The app must be developed using Ruby on Rails.
+4. The app must utilize TravisCI for continuous integration and delivery.
+5. The app must utilize Heroku for hosting.
+6. The app must have at least 3 projects for testing and grading in production.
+7. The app must have 80% code coverage as measured by Simplecov.
+8. 10 points extra credit if the CI pipeline runs Simplecov .
+9. The app must utilize Bootstrap for the front-end framework.
